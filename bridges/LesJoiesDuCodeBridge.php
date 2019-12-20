@@ -20,11 +20,11 @@ class LesJoiesDuCodeBridge extends BridgeAbstract {
 			$temp = $element->find('div.blog-post-content', 0);
 
 			// retrieve .gif instead of static .jpg
-			$images = $temp->find('p img');
-			foreach($images as $image) {
-				$img_src = str_replace('.jpg', '.gif', $image->src);
-				$image->src = $img_src;
-			}
+			// $images = $temp->find('p img');
+			// foreach($images as $image) {
+			// 	$img_src = str_replace('.jpg', '.gif', $image->src);
+			// 	$image->src = $img_src;
+			// }
 			$content = $temp->innertext;
 
 			$item['content'] = trim($content);
